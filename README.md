@@ -78,8 +78,8 @@ which matters here because two training columns carry non-obvious spellings
 ## Run locally
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/compaction-curve-predictor.git
-cd compaction-curve-predictor
+git clone https://github.com/ahmednawaad/Superpave-Gyratory-Compaction-Curve-Predictor-app.git
+cd Superpave-Gyratory-Compaction-Curve-Predictor-app
 
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
