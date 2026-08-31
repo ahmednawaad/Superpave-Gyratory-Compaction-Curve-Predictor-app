@@ -1,0 +1,365 @@
+{
+  "model_name": "CatBoost multi-output regressor (StandardScaler pipeline)",
+  "targets": [
+    "Slope",
+    "Intercept"
+  ],
+  "n_observations": 279,
+  "features": [
+    "η",
+    "Pb%",
+    "TR_Rankine",
+    "PG limits",
+    "lambda ",
+    "kappa",
+    "GA",
+    "TX"
+  ],
+  "feature_labels": {
+    "η": "η",
+    "Pb%": "Pb%",
+    "TR_Rankine": "T$_R$",
+    "PG limits": "PG lim.",
+    "lambda ": "λ",
+    "kappa": "κ",
+    "GA": "GA",
+    "TX": "TX"
+  },
+  "feature_help": {
+    "η": "Binder viscosity at the compaction temperature (Pa·s)",
+    "Pb%": "Binder content by total mixture mass (%)",
+    "TR_Rankine": "Compaction temperature (degrees Rankine)",
+    "PG limits": "Product of the high and low performance-grade limits (TH × TL)",
+    "lambda ": "Weibull scale parameter of the aggregate gradation",
+    "kappa": "Weibull shape parameter of the aggregate gradation",
+    "GA": "Aggregate gradation area index",
+    "TX": "Gradation transition index"
+  },
+  "feature_stats": {
+    "η": {
+      "min": 0.266,
+      "max": 1.5035631662671016,
+      "median": 0.8259591070166568,
+      "mean": 0.9357190095929411,
+      "std": 0.35375496575444526,
+      "p5": 0.489,
+      "p95": 1.5035631662671016,
+      "n_unique": 14,
+      "levels": null
+    },
+    "Pb%": {
+      "min": 3.9,
+      "max": 7.3,
+      "median": 5.49,
+      "mean": 5.473978494623655,
+      "std": 0.6750877477496939,
+      "p5": 4.4,
+      "p95": 6.8,
+      "n_unique": 72,
+      "levels": null
+    },
+    "TR_Rankine": {
+      "min": 709.6290958,
+      "max": 773.4785739,
+      "median": 748.7808848,
+      "mean": 741.3895814229389,
+      "std": 19.700460470222666,
+      "p5": 709.6290958,
+      "p95": 759.6977306,
+      "n_unique": 13,
+      "levels": null
+    },
+    "PG limits": {
+      "min": -2176.0,
+      "max": -1474.0,
+      "median": -1672.0,
+      "mean": -1751.3118279569892,
+      "std": 209.48250618885706,
+      "p5": -1960.0,
+      "p95": -1474.0,
+      "n_unique": 7,
+      "levels": [
+        -2176.0,
+        -2128.0,
+        -1960.0,
+        -1792.0,
+        -1672.0,
+        -1624.0,
+        -1474.0
+      ]
+    },
+    "lambda ": {
+      "min": 3.031,
+      "max": 12.35,
+      "median": 6.601,
+      "mean": 6.974372759856631,
+      "std": 2.528872489021565,
+      "p5": 3.33,
+      "p95": 11.55,
+      "n_unique": 77,
+      "levels": null
+    },
+    "kappa": {
+      "min": 0.7175,
+      "max": 2.351,
+      "median": 0.9705,
+      "mean": 1.1944706093189963,
+      "std": 0.474089391439554,
+      "p5": 0.8422,
+      "p95": 2.351,
+      "n_unique": 75,
+      "levels": null
+    },
+    "GA": {
+      "min": 2266.69,
+      "max": 4142.82,
+      "median": 3005.3888644656104,
+      "mean": 3062.133044025365,
+      "std": 296.653866652884,
+      "p5": 2594.9030000000002,
+      "p95": 3484.5189999999993,
+      "n_unique": 147,
+      "levels": null
+    },
+    "TX": {
+      "min": 80.04715712626923,
+      "max": 587.06,
+      "median": 295.48311281932314,
+      "mean": 275.0369509422024,
+      "std": 137.847320462413,
+      "p5": 90.67891344310054,
+      "p95": 485.73999999999984,
+      "n_unique": 147,
+      "levels": null
+    }
+  },
+  "target_stats": {
+    "Slope": {
+      "min": -4.776675261569013,
+      "max": -2.1,
+      "mean": -3.9236381330796246,
+      "std": 0.44060933700975696
+    },
+    "Intercept": {
+      "min": 13.44,
+      "max": 38.52358856576846,
+      "mean": 25.461936326630227,
+      "std": 4.793304418041341
+    }
+  },
+  "performance_holdout": [
+    {
+      "Split": "Train",
+      "Target": "Slope",
+      "R2": 0.98579139867276,
+      "Adj_R2": 0.9852230546196704,
+      "RMSE": 0.0507013052756029,
+      "MAE": 0.0322585539005858,
+      "MAPE_%": 0.8452495677189682
+    },
+    {
+      "Split": "Train",
+      "Target": "Intercept",
+      "R2": 0.9962308598080704,
+      "Adj_R2": 0.9960800942003932,
+      "RMSE": 0.2783321365117013,
+      "MAE": 0.1728993999629064,
+      "MAPE_%": 0.6523154628080623
+    },
+    {
+      "Split": "Test",
+      "Target": "Slope",
+      "R2": 0.9262790589250954,
+      "Adj_R2": 0.9166107387841244,
+      "RMSE": 0.1252414664704715,
+      "MAE": 0.0839691430545126,
+      "MAPE_%": 2.263736711286984
+    },
+    {
+      "Split": "Test",
+      "Target": "Intercept",
+      "R2": 0.9842119944202212,
+      "Adj_R2": 0.982141436311398,
+      "RMSE": 0.6864727301456872,
+      "MAE": 0.4635196986913557,
+      "MAPE_%": 1.6712059350055708
+    }
+  ],
+  "performance_loocv": [
+    {
+      "Target": "Slope",
+      "MAE": 0.0756997285888582,
+      "RMSE": 0.1121086101024964,
+      "R2": 0.9350274440490076,
+      "Bias": 0.0024573852044789,
+      "P90_abs_err": 0.1840306630469658,
+      "nMAE": 0.1718069097277934
+    },
+    {
+      "Target": "Intercept",
+      "MAE": 0.4402500552668802,
+      "RMSE": 0.6258064123285243,
+      "R2": 0.9828931754169344,
+      "Bias": 0.00275088315374,
+      "P90_abs_err": 1.0918432198553485,
+      "nMAE": 0.0918468799122875
+    }
+  ],
+  "sensitivity_index": [
+    {
+      "Feature": "kappa",
+      "Target": "Intercept",
+      "SI_pct": 34.18825148491006,
+      "Std_Sens_Coef": 1.1599568403368743,
+      "Direction": "increasing"
+    },
+    {
+      "Feature": "lambda ",
+      "Target": "Intercept",
+      "SI_pct": 15.451979874994304,
+      "Std_Sens_Coef": 0.3265528827359983,
+      "Direction": "increasing"
+    },
+    {
+      "Feature": "Pb%",
+      "Target": "Intercept",
+      "SI_pct": 11.79461291357058,
+      "Std_Sens_Coef": -0.32215795871728126,
+      "Direction": "decreasing"
+    },
+    {
+      "Feature": "η",
+      "Target": "Intercept",
+      "SI_pct": 10.453391458288433,
+      "Std_Sens_Coef": 0.09351575312348533,
+      "Direction": "increasing"
+    },
+    {
+      "Feature": "TX",
+      "Target": "Intercept",
+      "SI_pct": 9.28368939490904,
+      "Std_Sens_Coef": -0.22218554428401494,
+      "Direction": "decreasing"
+    },
+    {
+      "Feature": "GA",
+      "Target": "Intercept",
+      "SI_pct": 9.25825090745423,
+      "Std_Sens_Coef": 0.06194667866249906,
+      "Direction": "increasing"
+    },
+    {
+      "Feature": "PG limits",
+      "Target": "Intercept",
+      "SI_pct": 5.9978483539055025,
+      "Std_Sens_Coef": 0.19915698242117938,
+      "Direction": "increasing"
+    },
+    {
+      "Feature": "TR_Rankine",
+      "Target": "Intercept",
+      "SI_pct": 3.5719756119678543,
+      "Std_Sens_Coef": 0.0836616585798128,
+      "Direction": "decreasing"
+    },
+    {
+      "Feature": "GA",
+      "Target": "Slope",
+      "SI_pct": 25.324804664162752,
+      "Std_Sens_Coef": -0.804725938365891,
+      "Direction": "decreasing"
+    },
+    {
+      "Feature": "TX",
+      "Target": "Slope",
+      "SI_pct": 21.565065007654095,
+      "Std_Sens_Coef": 0.511786828692719,
+      "Direction": "increasing"
+    },
+    {
+      "Feature": "lambda ",
+      "Target": "Slope",
+      "SI_pct": 17.23310620627567,
+      "Std_Sens_Coef": -0.3723445846242608,
+      "Direction": "decreasing"
+    },
+    {
+      "Feature": "Pb%",
+      "Target": "Slope",
+      "SI_pct": 15.13902535182587,
+      "Std_Sens_Coef": -0.36775651473175097,
+      "Direction": "decreasing"
+    },
+    {
+      "Feature": "kappa",
+      "Target": "Slope",
+      "SI_pct": 15.072570442008399,
+      "Std_Sens_Coef": 0.29633249708079495,
+      "Direction": "increasing"
+    },
+    {
+      "Feature": "TR_Rankine",
+      "Target": "Slope",
+      "SI_pct": 3.3966959176321243,
+      "Std_Sens_Coef": 0.07914489292615721,
+      "Direction": "increasing"
+    },
+    {
+      "Feature": "PG limits",
+      "Target": "Slope",
+      "SI_pct": 1.6851025483673263,
+      "Std_Sens_Coef": -0.00971438958163941,
+      "Direction": "decreasing"
+    },
+    {
+      "Feature": "η",
+      "Target": "Slope",
+      "SI_pct": 0.5836298620737621,
+      "Std_Sens_Coef": 0.020703664101374534,
+      "Direction": "increasing"
+    }
+  ],
+  "shap_importance": [
+    {
+      "Feature": "η",
+      "Slope_pct": 1.8412576073204814,
+      "Intercept_pct": 6.6276083713155876
+    },
+    {
+      "Feature": "TR_Rankine",
+      "Slope_pct": 3.573447290909567,
+      "Intercept_pct": 7.841028807763839
+    },
+    {
+      "Feature": "PG limits",
+      "Slope_pct": 2.6397730996439095,
+      "Intercept_pct": 10.651755480795467
+    },
+    {
+      "Feature": "Pb%",
+      "Slope_pct": 9.529413296305629,
+      "Intercept_pct": 8.734370037697369
+    },
+    {
+      "Feature": "TX",
+      "Slope_pct": 19.314239368824683,
+      "Intercept_pct": 9.786775237142113
+    },
+    {
+      "Feature": "GA",
+      "Slope_pct": 24.56456941808486,
+      "Intercept_pct": 8.75339547191838
+    },
+    {
+      "Feature": "lambda ",
+      "Slope_pct": 18.92347219144332,
+      "Intercept_pct": 15.471638695653144
+    },
+    {
+      "Feature": "kappa",
+      "Slope_pct": 19.613827727467548,
+      "Intercept_pct": 32.13342789771409
+    }
+  ],
+  "equation": "AV(N_g) = Slope * ln(N_g) + Intercept"
+}
