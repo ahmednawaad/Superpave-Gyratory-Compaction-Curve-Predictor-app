@@ -18,7 +18,7 @@ reach the 4 % design air-void target.
 
 <!-- replace with your own URL once deployed -->
 
-**https://YOUR-APP-NAME.streamlit.app**
+**https://superpave-gyratory-compaction-curve-predictor-appgit-34jizakp4.streamlit.app/**
 
 ---
 
